@@ -11,3 +11,4 @@ __pycache__/
 *.out
 logs/
 .csvrepo-clean.git/
+repo-clean.git/
