@@ -73,7 +73,7 @@ Cluster logs go under `Simulation_1_TimeTreatment/logs/` and `Simulation_2_DiD/l
 
 This exercise evaluates estimators of \(E[Y(1,1)]\) under time-varying treatment. It crosses a linear and a nonlinear outcome DGP with propensity score specifications (logistic / truncated-logistic / truncated-adversarial), with 500 Monte Carlo iterations at each of \(N = 500, 1000, 2000\). 
 
-Estimators include an oracle, Bradic et al.'s original estimator, and nested Riesz estimators with LASSO, random forests (RF), and a neural network (Net), including (i) Manual Lasso/RF/NN-Ridge estimators using the sequentially doubly robust representation of Bradic, et al. (ii) Manual Lasso-Lasso/RF-RF/NN-NN estimators, and (iii) Auto-Lasso/RF/NN estimators all implemented using implemented using the NNPIV package of Meza and Singh (2021). 
+Estimators include an oracle, Bradic et al.'s original estimator, and nested Riesz estimators with LASSO, random forests (RF), and a neural network (Net), including (i) Manual Lasso/RF/NN-Ridge estimators using the sequentially doubly robust representation of Bradic et al., (ii) Manual Lasso-Lasso/RF-RF/NN-NN estimators, and (iii) Auto-Lasso/RF/NN estimators, all implemented using the NNPIV package of Meza and Singh (2021). 
 
 Jobs were run on a SLURM cluster. The main array requests 4 CPUs, 16 GB RAM, and up to 2 hours of wall time per task, with Python 3.10 and R 4.4 modules loaded (edit `code/submit.sh` for your site).
 

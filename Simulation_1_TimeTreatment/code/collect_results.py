@@ -52,7 +52,8 @@ METHODS = [
 # Each config: estimand, label, result_dir, func, lower, upper, theta_key
 # Truncation [lower, upper] applies to truncated_* propensity models; logistic uses None.
 CONFIGS = [
-    # --- Main E[Y(1,1)] simulations (submit.sh; default truncation 0.1 / 0.9) ---
+    # --- Main E[Y(1,1)] simulations (submit.sh) ---
+    # Linear: truncated_logistic [0.1, 0.9]; nonlinear: truncated_adv [0.3, 0.7].
     {
         "estimand": "E[Y(1,1)]",
         "label": "Linear DGP + truncated logistic",
@@ -67,8 +68,8 @@ CONFIGS = [
         "label": "Nonlinear DGP + truncated adversarial",
         "result_dir": "results/nonlinear",
         "func": "truncated_adv",
-        "lower": 0.1,
-        "upper": 0.9,
+        "lower": 0.3,
+        "upper": 0.7,
         "theta_key": "theta_true",
     },
     {
@@ -89,7 +90,7 @@ CONFIGS = [
         "upper": None,
         "theta_key": "theta_true",
     },
-    # --- Appendix: alternate truncation levels (submit_nonATE.sh) ---
+    # --- Alternate truncation windows (if present on disk) ---
     {
         "estimand": "E[Y(1,1)]",
         "label": "Linear DGP + truncated logistic",
@@ -104,8 +105,8 @@ CONFIGS = [
         "label": "Nonlinear DGP + truncated adversarial",
         "result_dir": "results/nonlinear",
         "func": "truncated_adv",
-        "lower": 0.3,
-        "upper": 0.7,
+        "lower": 0.1,
+        "upper": 0.9,
         "theta_key": "theta_true",
     },
     {
@@ -117,7 +118,7 @@ CONFIGS = [
         "upper": 0.7,
         "theta_key": "theta_true",
     },
-    # --- ATE simulations (submit_ate.sh; legacy result paths use func name only) ---
+    # --- ATE simulations (legacy result dirs, if present) ---
     {
         "estimand": "ATE",
         "label": "Linear DGP + truncated logistic",

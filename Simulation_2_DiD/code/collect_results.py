@@ -68,7 +68,8 @@ def collect_results():
                 theta_k = pred_theta[:, k]
                 sig_k = pred_sig[:, k]
 
-                se_k = sig_k / math.sqrt(N)
+                # OLS returns an HC0 SE already; other methods return asymptotic sigma.
+                se_k = sig_k if name == "OLS" else sig_k / math.sqrt(N)
 
                 bias = torch.mean(theta_k - ATT).item()
                 rmse = torch.sqrt(torch.mean((theta_k - ATT) ** 2)).item()

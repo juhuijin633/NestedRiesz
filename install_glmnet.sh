@@ -1,8 +1,8 @@
 #!/bin/bash
 #
 # One-time setup: install glmnet into the user R library.
-# Submit from Simulation_1_TimeTreatment/:
-#   sbatch code/install_glmnet.sh
+# From the NestedRiesz repo root:
+#   sbatch install_glmnet.sh
 
 #SBATCH -p serial_requeue
 #SBATCH -t 00:30:00

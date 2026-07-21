@@ -282,12 +282,14 @@ def run_simulation(task_id=None):
     for k, name in enumerate(method_names):
         theta_k = pred_theta[:, k]
         sig_k = pred_sig[:, k]
+        # OLS returns an HC0 SE; other methods return asymptotic sigma.
+        se_k = sig_k if name == "OLS" else sig_k / (N ** 0.5)
         bias = torch.mean(theta_k - ATT).item()
         rmse = torch.sqrt(torch.mean((theta_k - ATT) ** 2)).item()
-        ci_low = theta_k - 1.96 * sig_k
-        ci_high = theta_k + 1.96 * sig_k
+        ci_low = theta_k - 1.96 * se_k
+        ci_high = theta_k + 1.96 * se_k
         coverage = torch.mean(((ci_low <= ATT) & (ATT <= ci_high)).float()).item()
-        interval_length = torch.mean(2 * 1.96 * sig_k).item()
+        interval_length = torch.mean(2 * 1.96 * se_k).item()
         print(
             f"{name:<12} {bias:>8.4f} {rmse:>8.4f} "
             f"{coverage:>10.2f} {interval_length:>16.4f}"
