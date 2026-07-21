@@ -1,0 +1,2 @@
+ATT_LASSO,Std_LASSO,ATT_RF,Std_RF,ATT_Net,Std_Net
+"tensor(0.0302, dtype=torch.float64)","tensor(0.8095, dtype=torch.float64)","tensor(0.0589, dtype=torch.float64)","tensor(1.5282, dtype=torch.float64)","tensor(0.0728, dtype=torch.float64)","tensor(2.2869, dtype=torch.float64)"

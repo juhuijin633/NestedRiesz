@@ -1,0 +1,10 @@
+group,method,ATT,SE
+Static,Static_OLS,-0.076354065627611,0.0229605241781966
+Static,Static_Manual_Linear,-0.0709,0.0232
+Static,Static_Auto_RF,-0.064,0.023
+Static,Static_Auto_Lasso,-0.06,0.025
+Static,Static_Auto_NN,-0.064,0.023
+Dynamic,Dynamic_OLS,-0.0764,0.0229
+Dynamic,Dynamic_Auto_Lasso,-0.0703021958470344,0.0239045396447181
+Dynamic,Dynamic_Auto_RF,-0.059525042772293,0.0230861715972423
+Dynamic,Dynamic_Auto_NN,-0.0617354735732078,0.024600300937891

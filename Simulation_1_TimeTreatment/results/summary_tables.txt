@@ -1,0 +1,554 @@
+Simulation summary
+Generated: 2026-07-06T16:16:12
+N values: [500, 1000, 2000]
+tmax (requested iterations per config): 500
+Configurations: 11
+
+========================================================================
+Estimand: E[Y(1,1)]
+Configuration: Linear DGP + truncated logistic
+Propensity: truncated_logistic
+Truncation: [0.1, 0.9]
+Result dir: results/linear/N500/truncated_logistic_0.1_0.9
+N = 500  |  tmax = 500
+True parameter = -2.0000  |  Iterations: 500 / 500
+========================================================================
+                        Method    Bias     RMSE  Coverage  Interval Length
+                        Oracle  0.0228   0.2449    0.9320           0.8772
+Manual-Lasso (Bradic Original)  0.0755   0.6112    0.9420           1.2948
+         Manual-Lasso (Bradic) -0.3179   1.2258    0.9640           2.5657
+            Manual-RF (Bradic)  1.2795   4.6442    0.9460           6.5867
+            Manual-NN (Bradic)  0.3371   2.5777    0.9780           3.9469
+                  Manual-Lasso -0.3525   1.2250    0.9680           2.5514
+                     Manual-RF  1.3603   4.6722    0.9520           6.6415
+                     Manual-NN  0.3370   2.5776    0.9780           3.9469
+            Manual-Lasso-Lasso -0.2354   1.0196    0.9620           2.2703
+                  Manual-RF-RF -0.6779   0.7317    0.2160           0.9171
+                  Manual-NN-NN 31.2619 209.7048    0.9620         143.0692
+                    Auto-Lasso  0.0225   0.2293    0.9280           0.8153
+                       Auto-RF  0.0189   0.2373    0.8580           0.7108
+                       Auto-NN -0.2380   0.3329    0.7440           0.7994
+
+========================================================================
+Estimand: E[Y(1,1)]
+Configuration: Linear DGP + truncated logistic
+Propensity: truncated_logistic
+Truncation: [0.1, 0.9]
+Result dir: results/linear/N1000/truncated_logistic_0.1_0.9
+N = 1000  |  tmax = 500
+True parameter = -2.0000  |  Iterations: 500 / 500
+========================================================================
+                        Method     Bias      RMSE  Coverage  Interval Length
+                        Oracle   0.0000    0.1620    0.9420           0.6227
+Manual-Lasso (Bradic Original)   0.0124    0.2478    0.9420           0.8367
+         Manual-Lasso (Bradic)  -0.2591    0.8439    0.9780           1.8609
+            Manual-RF (Bradic)   0.6285    2.6091    0.9560           3.3125
+            Manual-NN (Bradic)   0.3573    1.6980    0.9780           2.8913
+                  Manual-Lasso  -0.2919    0.8765    0.9740           1.8549
+                     Manual-RF   0.6516    2.6232    0.9560           3.3250
+                     Manual-NN   0.3572    1.6980    0.9780           2.8914
+            Manual-Lasso-Lasso  -0.2226    0.7543    0.9760           1.7446
+                  Manual-RF-RF  -0.2459    0.3023    0.5700           0.5539
+                  Manual-NN-NN 109.1901 1926.3967    0.9760         433.2155
+                    Auto-Lasso  -0.0028    0.1492    0.9380           0.5641
+                       Auto-RF   0.0015    0.1557    0.8940           0.5061
+                       Auto-NN  -0.0393    0.1773    0.9060           0.6366
+
+========================================================================
+Estimand: E[Y(1,1)]
+Configuration: Linear DGP + truncated logistic
+Propensity: truncated_logistic
+Truncation: [0.1, 0.9]
+Result dir: results/linear/N2000/truncated_logistic_0.1_0.9
+N = 2000  |  tmax = 500
+True parameter = -2.0000  |  Iterations: 500 / 500
+========================================================================
+                        Method    Bias     RMSE  Coverage  Interval Length
+                        Oracle  0.0051   0.1104    0.9700           0.4412
+Manual-Lasso (Bradic Original) -0.0030   0.2375    0.9760           0.6504
+         Manual-Lasso (Bradic) -0.2636   1.1068    0.9840           1.5234
+            Manual-RF (Bradic)  0.4197   1.7341    0.9740           2.1169
+            Manual-NN (Bradic)  0.3440   1.4124    0.9840           2.1754
+                  Manual-Lasso -0.2898   1.1221    0.9820           1.5291
+                     Manual-RF  0.4436   1.7408    0.9740           2.1279
+                     Manual-NN  0.3437   1.4123    0.9840           2.1755
+            Manual-Lasso-Lasso -0.2435   1.0420    0.9840           1.4652
+                  Manual-RF-RF -0.1720   0.2102    0.5600           0.3810
+                  Manual-NN-NN 22.5561 213.5704    0.9860          92.9418
+                    Auto-Lasso  0.0081   0.0996    0.9580           0.3968
+                       Auto-RF  0.0046   0.1345    0.9060           0.3680
+                       Auto-NN  0.0017   0.1478    0.9620           0.5640
+
+========================================================================
+Estimand: E[Y(1,1)]
+Configuration: Nonlinear DGP + truncated adversarial
+Propensity: truncated_adv
+Truncation: [0.1, 0.9]
+Result dir: results/nonlinear/N500/truncated_adv_0.1_0.9
+N = 500  |  tmax = 500
+True parameter = 6.5745  |  Iterations: 500 / 500
+========================================================================
+                        Method     Bias     RMSE  Coverage  Interval Length
+                        Oracle  -0.0126   0.3994    0.9460           1.4997
+Manual-Lasso (Bradic Original) -22.0252 443.5739    0.9200          95.2591
+         Manual-Lasso (Bradic)      NaN      NaN    0.0000              NaN
+            Manual-RF (Bradic)      NaN      NaN    0.0000              NaN
+            Manual-NN (Bradic)      NaN      NaN    0.0000              NaN
+                  Manual-Lasso      NaN      NaN    0.0000              NaN
+                     Manual-RF      NaN      NaN    0.0000              NaN
+                     Manual-NN      NaN      NaN    0.0000              NaN
+            Manual-Lasso-Lasso      NaN      NaN    0.0000              NaN
+                  Manual-RF-RF      NaN      NaN    0.0000              NaN
+                  Manual-NN-NN      NaN      NaN    0.0000              NaN
+                    Auto-Lasso   0.5258   0.5936    0.5160           1.0807
+                       Auto-RF   0.2338   1.8062    0.7840           1.9081
+                       Auto-NN   0.6172   0.6877    0.4020           1.0822
+
+========================================================================
+Estimand: E[Y(1,1)]
+Configuration: Nonlinear DGP + truncated adversarial
+Propensity: truncated_adv
+Truncation: [0.1, 0.9]
+Result dir: results/nonlinear/N1000/truncated_adv_0.1_0.9
+N = 1000  |  tmax = 500
+True parameter = 6.5745  |  Iterations: 500 / 500
+========================================================================
+                        Method    Bias   RMSE  Coverage  Interval Length
+                        Oracle -0.0117 0.2775    0.9420           1.0674
+Manual-Lasso (Bradic Original) -1.1957 9.0995    0.9260          10.9879
+         Manual-Lasso (Bradic)     NaN    NaN    0.0000              NaN
+            Manual-RF (Bradic)     NaN    NaN    0.0000              NaN
+            Manual-NN (Bradic)     NaN    NaN    0.0000              NaN
+                  Manual-Lasso     NaN    NaN    0.0000              NaN
+                     Manual-RF     NaN    NaN    0.0000              NaN
+                     Manual-NN     NaN    NaN    0.0000              NaN
+            Manual-Lasso-Lasso     NaN    NaN    0.0000              NaN
+                  Manual-RF-RF     NaN    NaN    0.0000              NaN
+                  Manual-NN-NN     NaN    NaN    0.0000              NaN
+                    Auto-Lasso  0.5229 0.5579    0.2340           0.7621
+                       Auto-RF -0.0422 2.0001    0.8660           2.9698
+                       Auto-NN  0.2924 0.4367    0.6760           1.0371
+
+========================================================================
+Estimand: E[Y(1,1)]
+Configuration: Nonlinear DGP + truncated adversarial
+Propensity: truncated_adv
+Truncation: [0.1, 0.9]
+Result dir: results/nonlinear/N2000/truncated_adv_0.1_0.9
+N = 2000  |  tmax = 500
+True parameter = 6.5745  |  Iterations: 500 / 500
+========================================================================
+                        Method    Bias   RMSE  Coverage  Interval Length
+                        Oracle -0.0200 0.1887    0.9500           0.7560
+Manual-Lasso (Bradic Original) -0.5450 3.4420    0.9520           6.5742
+         Manual-Lasso (Bradic)     NaN    NaN    0.0000              NaN
+            Manual-RF (Bradic)     NaN    NaN    0.0000              NaN
+            Manual-NN (Bradic)     NaN    NaN    0.0000              NaN
+                  Manual-Lasso     NaN    NaN    0.0000              NaN
+                     Manual-RF     NaN    NaN    0.0000              NaN
+                     Manual-NN     NaN    NaN    0.0000              NaN
+            Manual-Lasso-Lasso     NaN    NaN    0.0000              NaN
+                  Manual-RF-RF     NaN    NaN    0.0000              NaN
+                  Manual-NN-NN     NaN    NaN    0.0000              NaN
+                    Auto-Lasso  0.5275 0.5438    0.0200           0.5381
+                       Auto-RF -0.2215 5.1158    0.9300           4.2261
+                       Auto-NN  0.1064 0.3097    0.8640           1.0524
+
+========================================================================
+Estimand: E[Y(1,1)]
+Configuration: Linear DGP + truncated adversarial
+Propensity: truncated_adv
+Truncation: [0.1, 0.9]
+Result dir: results/linear/N500/truncated_adv_0.1_0.9
+N = 500  |  tmax = 500
+True parameter = -2.0000  |  Iterations: 500 / 500
+========================================================================
+                        Method    Bias    RMSE  Coverage  Interval Length
+                        Oracle  0.0059  0.3709    0.9500           1.3028
+Manual-Lasso (Bradic Original) -2.1486 70.8376    0.9800          40.8711
+         Manual-Lasso (Bradic)     NaN     NaN    0.0000              NaN
+            Manual-RF (Bradic)     NaN     NaN    0.0000              NaN
+            Manual-NN (Bradic)     NaN     NaN    0.0000              NaN
+                  Manual-Lasso     NaN     NaN    0.0000              NaN
+                     Manual-RF     NaN     NaN    0.0000              NaN
+                     Manual-NN     NaN     NaN    0.0000              NaN
+            Manual-Lasso-Lasso     NaN     NaN    0.0000              NaN
+                  Manual-RF-RF     NaN     NaN    0.0000              NaN
+                  Manual-NN-NN     NaN     NaN    0.0000              NaN
+                    Auto-Lasso  0.0001  0.2557    0.9280           0.9204
+                       Auto-RF  0.0091  0.2757    0.8220           0.7001
+                       Auto-NN -0.3750  0.4609    0.6580           0.9793
+
+========================================================================
+Estimand: E[Y(1,1)]
+Configuration: Linear DGP + truncated adversarial
+Propensity: truncated_adv
+Truncation: [0.1, 0.9]
+Result dir: results/linear/N1000/truncated_adv_0.1_0.9
+N = 1000  |  tmax = 500
+True parameter = -2.0000  |  Iterations: 500 / 500
+========================================================================
+                        Method    Bias     RMSE  Coverage  Interval Length
+                        Oracle -0.0041   0.2592    0.9600           0.9684
+Manual-Lasso (Bradic Original)  3.2889 116.5870    0.9820          54.2937
+         Manual-Lasso (Bradic)     NaN      NaN    0.0000              NaN
+            Manual-RF (Bradic)     NaN      NaN    0.0000              NaN
+            Manual-NN (Bradic)     NaN      NaN    0.0000              NaN
+                  Manual-Lasso     NaN      NaN    0.0000              NaN
+                     Manual-RF     NaN      NaN    0.0000              NaN
+                     Manual-NN     NaN      NaN    0.0000              NaN
+            Manual-Lasso-Lasso     NaN      NaN    0.0000              NaN
+                  Manual-RF-RF     NaN      NaN    0.0000              NaN
+                  Manual-NN-NN     NaN      NaN    0.0000              NaN
+                    Auto-Lasso -0.0017   0.1690    0.9380           0.6365
+                       Auto-RF -0.0022   0.1883    0.8240           0.5121
+                       Auto-NN -0.0871   0.2364    0.9020           0.8074
+
+========================================================================
+Estimand: E[Y(1,1)]
+Configuration: Linear DGP + truncated adversarial
+Propensity: truncated_adv
+Truncation: [0.1, 0.9]
+Result dir: results/linear/N2000/truncated_adv_0.1_0.9
+N = 2000  |  tmax = 500
+True parameter = -2.0000  |  Iterations: 500 / 500
+========================================================================
+                        Method    Bias    RMSE  Coverage  Interval Length
+                        Oracle  0.0059  0.1788    0.9520           0.6960
+Manual-Lasso (Bradic Original) -3.3922 66.3321    0.9940          38.1538
+         Manual-Lasso (Bradic)     NaN     NaN    0.0000              NaN
+            Manual-RF (Bradic)     NaN     NaN    0.0000              NaN
+            Manual-NN (Bradic)     NaN     NaN    0.0000              NaN
+                  Manual-Lasso     NaN     NaN    0.0000              NaN
+                     Manual-RF     NaN     NaN    0.0000              NaN
+                     Manual-NN     NaN     NaN    0.0000              NaN
+            Manual-Lasso-Lasso     NaN     NaN    0.0000              NaN
+                  Manual-RF-RF     NaN     NaN    0.0000              NaN
+                  Manual-NN-NN     NaN     NaN    0.0000              NaN
+                    Auto-Lasso  0.0060  0.1137    0.9520           0.4477
+                       Auto-RF  0.0072  0.1446    0.8340           0.3829
+                       Auto-NN  0.0386  0.2938    0.9380           0.9467
+
+========================================================================
+Estimand: E[Y(1,1)]
+Configuration: Linear DGP + logistic
+Propensity: logistic
+Truncation: none (full support)
+Result dir: results/linear/N500/logistic
+N = 500  |  tmax = 500
+True parameter = -2.0000  |  Iterations: 500 / 500
+========================================================================
+                        Method    Bias   RMSE  Coverage  Interval Length
+                        Oracle  0.0128 0.4234    0.9480           1.1934
+Manual-Lasso (Bradic Original)  0.0161 0.5350    0.9240           1.4550
+         Manual-Lasso (Bradic)     NaN    NaN    0.0000              NaN
+            Manual-RF (Bradic)     NaN    NaN    0.0000              NaN
+            Manual-NN (Bradic)     NaN    NaN    0.0000              NaN
+                  Manual-Lasso     NaN    NaN    0.0000              NaN
+                     Manual-RF     NaN    NaN    0.0000              NaN
+                     Manual-NN     NaN    NaN    0.0000              NaN
+            Manual-Lasso-Lasso     NaN    NaN    0.0000              NaN
+                  Manual-RF-RF     NaN    NaN    0.0000              NaN
+                  Manual-NN-NN     NaN    NaN    0.0000              NaN
+                    Auto-Lasso  0.0239 0.2406    0.9220           0.8725
+                       Auto-RF  0.0207 0.2594    0.8540           0.7005
+                       Auto-NN -0.3334 0.4178    0.6340           0.8460
+
+========================================================================
+Estimand: E[Y(1,1)]
+Configuration: Linear DGP + logistic
+Propensity: logistic
+Truncation: none (full support)
+Result dir: results/linear/N1000/logistic
+N = 1000  |  tmax = 500
+True parameter = -2.0000  |  Iterations: 500 / 500
+========================================================================
+                        Method    Bias   RMSE  Coverage  Interval Length
+                        Oracle -0.0346 0.4175    0.9660           0.9579
+Manual-Lasso (Bradic Original) -0.0216 0.3761    0.9320           0.9640
+         Manual-Lasso (Bradic)     NaN    NaN    0.0000              NaN
+            Manual-RF (Bradic)     NaN    NaN    0.0000              NaN
+            Manual-NN (Bradic)     NaN    NaN    0.0000              NaN
+                  Manual-Lasso     NaN    NaN    0.0000              NaN
+                     Manual-RF     NaN    NaN    0.0000              NaN
+                     Manual-NN     NaN    NaN    0.0000              NaN
+            Manual-Lasso-Lasso     NaN    NaN    0.0000              NaN
+                  Manual-RF-RF     NaN    NaN    0.0000              NaN
+                  Manual-NN-NN     NaN    NaN    0.0000              NaN
+                    Auto-Lasso -0.0053 0.1607    0.9340           0.6052
+                       Auto-RF -0.0004 0.1752    0.8580           0.5049
+                       Auto-NN -0.1135 0.2331    0.8760           0.7358
+
+========================================================================
+Estimand: E[Y(1,1)]
+Configuration: Linear DGP + logistic
+Propensity: logistic
+Truncation: none (full support)
+Result dir: results/linear/N2000/logistic
+N = 2000  |  tmax = 500
+True parameter = -2.0000  |  Iterations: 500 / 500
+========================================================================
+                        Method    Bias   RMSE  Coverage  Interval Length
+                        Oracle  0.0294 0.6838    0.9580           0.7820
+Manual-Lasso (Bradic Original)  0.0064 0.2503    0.9320           0.6789
+         Manual-Lasso (Bradic)     NaN    NaN    0.0000              NaN
+            Manual-RF (Bradic)     NaN    NaN    0.0000              NaN
+            Manual-NN (Bradic)     NaN    NaN    0.0000              NaN
+                  Manual-Lasso     NaN    NaN    0.0000              NaN
+                     Manual-RF     NaN    NaN    0.0000              NaN
+                     Manual-NN     NaN    NaN    0.0000              NaN
+            Manual-Lasso-Lasso     NaN    NaN    0.0000              NaN
+                  Manual-RF-RF     NaN    NaN    0.0000              NaN
+                  Manual-NN-NN     NaN    NaN    0.0000              NaN
+                    Auto-Lasso  0.0067 0.1078    0.9440           0.4262
+                       Auto-RF -0.0061 0.3830    0.8540           0.4320
+                       Auto-NN -0.0423 0.2296    0.9500           0.8127
+
+========================================================================
+Estimand: E[Y(1,1)]
+Configuration: Linear DGP + truncated logistic
+Propensity: truncated_logistic
+Truncation: [0.3, 0.7]
+Result dir: results/linear/N500/truncated_logistic_0.3_0.7
+N = 500  |  tmax = 500
+True parameter = -2.0000  |  Iterations: 500 / 500
+========================================================================
+                        Method    Bias   RMSE  Coverage  Interval Length
+                        Oracle  0.0194 0.1952    0.9340           0.7275
+Manual-Lasso (Bradic Original)  0.0190 0.1995    0.9300           0.7492
+         Manual-Lasso (Bradic)     NaN    NaN    0.0000              NaN
+            Manual-RF (Bradic)     NaN    NaN    0.0000              NaN
+            Manual-NN (Bradic)     NaN    NaN    0.0000              NaN
+                  Manual-Lasso     NaN    NaN    0.0000              NaN
+                     Manual-RF     NaN    NaN    0.0000              NaN
+                     Manual-NN     NaN    NaN    0.0000              NaN
+            Manual-Lasso-Lasso     NaN    NaN    0.0000              NaN
+                  Manual-RF-RF     NaN    NaN    0.0000              NaN
+                  Manual-NN-NN     NaN    NaN    0.0000              NaN
+                    Auto-Lasso  0.0208 0.1990    0.9260           0.7405
+                       Auto-RF  0.0150 0.2024    0.9240           0.7240
+                       Auto-NN -0.1162 0.2378    0.8760           0.7523
+
+========================================================================
+Estimand: E[Y(1,1)]
+Configuration: Linear DGP + truncated logistic
+Propensity: truncated_logistic
+Truncation: [0.3, 0.7]
+Result dir: results/linear/N1000/truncated_logistic_0.3_0.7
+N = 1000  |  tmax = 500
+True parameter = -2.0000  |  Iterations: 500 / 500
+========================================================================
+                        Method    Bias   RMSE  Coverage  Interval Length
+                        Oracle  0.0038 0.1319    0.9520           0.5138
+Manual-Lasso (Bradic Original)  0.0038 0.1347    0.9460           0.5221
+         Manual-Lasso (Bradic)     NaN    NaN    0.0000              NaN
+            Manual-RF (Bradic)     NaN    NaN    0.0000              NaN
+            Manual-NN (Bradic)     NaN    NaN    0.0000              NaN
+                  Manual-Lasso     NaN    NaN    0.0000              NaN
+                     Manual-RF     NaN    NaN    0.0000              NaN
+                     Manual-NN     NaN    NaN    0.0000              NaN
+            Manual-Lasso-Lasso     NaN    NaN    0.0000              NaN
+                  Manual-RF-RF     NaN    NaN    0.0000              NaN
+                  Manual-NN-NN     NaN    NaN    0.0000              NaN
+                    Auto-Lasso  0.0027 0.1345    0.9440           0.5147
+                       Auto-RF  0.0052 0.1371    0.9420           0.5096
+                       Auto-NN -0.0055 0.1439    0.9440           0.5433
+
+========================================================================
+Estimand: E[Y(1,1)]
+Configuration: Linear DGP + truncated logistic
+Propensity: truncated_logistic
+Truncation: [0.3, 0.7]
+Result dir: results/linear/N2000/truncated_logistic_0.3_0.7
+N = 2000  |  tmax = 500
+True parameter = -2.0000  |  Iterations: 500 / 500
+========================================================================
+                        Method   Bias   RMSE  Coverage  Interval Length
+                        Oracle 0.0054 0.0877    0.9720           0.3635
+Manual-Lasso (Bradic Original) 0.0041 0.0891    0.9660           0.3672
+         Manual-Lasso (Bradic)    NaN    NaN    0.0000              NaN
+            Manual-RF (Bradic)    NaN    NaN    0.0000              NaN
+            Manual-NN (Bradic)    NaN    NaN    0.0000              NaN
+                  Manual-Lasso    NaN    NaN    0.0000              NaN
+                     Manual-RF    NaN    NaN    0.0000              NaN
+                     Manual-NN    NaN    NaN    0.0000              NaN
+            Manual-Lasso-Lasso    NaN    NaN    0.0000              NaN
+                  Manual-RF-RF    NaN    NaN    0.0000              NaN
+                  Manual-NN-NN    NaN    NaN    0.0000              NaN
+                    Auto-Lasso 0.0046 0.0882    0.9660           0.3618
+                       Auto-RF 0.0038 0.0903    0.9500           0.3582
+                       Auto-NN 0.0063 0.0961    0.9600           0.3911
+
+========================================================================
+Estimand: E[Y(1,1)]
+Configuration: Nonlinear DGP + truncated adversarial
+Propensity: truncated_adv
+Truncation: [0.3, 0.7]
+Result dir: results/nonlinear/N500/truncated_adv_0.3_0.7
+N = 500  |  tmax = 500
+True parameter = 6.5745  |  Iterations: 500 / 500
+========================================================================
+                        Method     Bias      RMSE  Coverage  Interval Length
+                        Oracle  -0.0126    0.2680    0.9560           1.0486
+Manual-Lasso (Bradic Original)   0.1428    0.2979    0.9020           1.0477
+         Manual-Lasso (Bradic)   0.1243    0.2916    0.9260           1.0921
+            Manual-RF (Bradic)   0.0333    0.8772    0.9240           2.4581
+            Manual-NN (Bradic)   0.1914    0.6775    0.9900           2.4356
+                  Manual-Lasso   0.1217    0.2911    0.9260           1.0930
+                     Manual-RF   0.0521    0.8658    0.9220           2.4623
+                     Manual-NN   0.1914    0.6775    0.9900           2.4357
+            Manual-Lasso-Lasso   0.1252    0.2911    0.9220           1.0852
+                  Manual-RF-RF   0.8025    0.8617    0.4640           1.5249
+                  Manual-NN-NN -71.2032 1480.8702    0.9780         282.9505
+                    Auto-Lasso   0.1706    0.3107    0.9100           1.0267
+                       Auto-RF   0.0805    0.2848    0.9300           1.0510
+                       Auto-NN   0.2345    0.3558    0.8220           0.9995
+
+========================================================================
+Estimand: E[Y(1,1)]
+Configuration: Nonlinear DGP + truncated adversarial
+Propensity: truncated_adv
+Truncation: [0.3, 0.7]
+Result dir: results/nonlinear/N1000/truncated_adv_0.3_0.7
+N = 1000  |  tmax = 500
+True parameter = 6.5745  |  Iterations: 500 / 500
+========================================================================
+                        Method    Bias   RMSE  Coverage  Interval Length
+                        Oracle -0.0030 0.1972    0.9340           0.7393
+Manual-Lasso (Bradic Original)  0.1497 0.2476    0.8820           0.7345
+         Manual-Lasso (Bradic)  0.1433 0.2462    0.8840           0.7530
+            Manual-RF (Bradic)  0.1482 0.4058    0.9100           1.5384
+            Manual-NN (Bradic)  0.1689 0.3532    0.9860           1.6081
+                  Manual-Lasso  0.1409 0.2450    0.8840           0.7534
+                     Manual-RF  0.1187 0.4101    0.9240           1.5789
+                     Manual-NN  0.1690 0.3532    0.9860           1.6082
+            Manual-Lasso-Lasso  0.1438 0.2463    0.8840           0.7513
+                  Manual-RF-RF  0.4406 0.5068    0.7040           1.1276
+                  Manual-NN-NN -0.9103 5.0805    0.9900           5.1165
+                    Auto-Lasso  0.1803 0.2641    0.8400           0.7214
+                       Auto-RF  0.0630 0.2144    0.9100           0.7526
+                       Auto-NN  0.0728 0.2173    0.9280           0.7616
+
+========================================================================
+Estimand: E[Y(1,1)]
+Configuration: Nonlinear DGP + truncated adversarial
+Propensity: truncated_adv
+Truncation: [0.3, 0.7]
+Result dir: results/nonlinear/N2000/truncated_adv_0.3_0.7
+N = 2000  |  tmax = 500
+True parameter = 6.5745  |  Iterations: 500 / 500
+========================================================================
+                        Method    Bias   RMSE  Coverage  Interval Length
+                        Oracle -0.0159 0.1316    0.9540           0.5245
+Manual-Lasso (Bradic Original)  0.1384 0.1894    0.8180           0.5192
+         Manual-Lasso (Bradic)  0.1330 0.1861    0.8300           0.5269
+            Manual-RF (Bradic)  0.1907 0.3039    0.8460           1.0160
+            Manual-NN (Bradic)  0.1334 0.2471    0.9800           1.1262
+                  Manual-Lasso  0.1311 0.1849    0.8360           0.5273
+                     Manual-RF  0.1012 0.2725    0.9200           1.0517
+                     Manual-NN  0.1337 0.2472    0.9800           1.1265
+            Manual-Lasso-Lasso  0.1333 0.1863    0.8300           0.5264
+                  Manual-RF-RF  0.3467 0.3860    0.6000           0.7828
+                  Manual-NN-NN -0.1968 0.8094    1.0000           1.7427
+                    Auto-Lasso  0.1713 0.2141    0.7480           0.5119
+                       Auto-RF  0.0281 0.1383    0.9520           0.5415
+                       Auto-NN  0.0628 0.1509    0.9140           0.5438
+
+========================================================================
+Estimand: E[Y(1,1)]
+Configuration: Linear DGP + truncated adversarial
+Propensity: truncated_adv
+Truncation: [0.3, 0.7]
+Result dir: results/linear/N500/truncated_adv_0.3_0.7
+N = 500  |  tmax = 500
+True parameter = -2.0000  |  Iterations: 500 / 500
+========================================================================
+                        Method    Bias   RMSE  Coverage  Interval Length
+                        Oracle  0.0179 0.2107    0.9320           0.7737
+Manual-Lasso (Bradic Original)  0.0226 0.2193    0.9200           0.8235
+         Manual-Lasso (Bradic)     NaN    NaN    0.0000              NaN
+            Manual-RF (Bradic)     NaN    NaN    0.0000              NaN
+            Manual-NN (Bradic)     NaN    NaN    0.0000              NaN
+                  Manual-Lasso     NaN    NaN    0.0000              NaN
+                     Manual-RF     NaN    NaN    0.0000              NaN
+                     Manual-NN     NaN    NaN    0.0000              NaN
+            Manual-Lasso-Lasso     NaN    NaN    0.0000              NaN
+                  Manual-RF-RF     NaN    NaN    0.0000              NaN
+                  Manual-NN-NN     NaN    NaN    0.0000              NaN
+                    Auto-Lasso  0.0172 0.2099    0.9320           0.7626
+                       Auto-RF  0.0199 0.2169    0.9000           0.7190
+                       Auto-NN -0.1474 0.2664    0.8480           0.7749
+
+========================================================================
+Estimand: E[Y(1,1)]
+Configuration: Linear DGP + truncated adversarial
+Propensity: truncated_adv
+Truncation: [0.3, 0.7]
+Result dir: results/linear/N1000/truncated_adv_0.3_0.7
+N = 1000  |  tmax = 500
+True parameter = -2.0000  |  Iterations: 500 / 500
+========================================================================
+                        Method   Bias   RMSE  Coverage  Interval Length
+                        Oracle 0.0059 0.1404    0.9400           0.5467
+Manual-Lasso (Bradic Original) 0.0101 0.1435    0.9460           0.5657
+         Manual-Lasso (Bradic)    NaN    NaN    0.0000              NaN
+            Manual-RF (Bradic)    NaN    NaN    0.0000              NaN
+            Manual-NN (Bradic)    NaN    NaN    0.0000              NaN
+                  Manual-Lasso    NaN    NaN    0.0000              NaN
+                     Manual-RF    NaN    NaN    0.0000              NaN
+                     Manual-NN    NaN    NaN    0.0000              NaN
+            Manual-Lasso-Lasso    NaN    NaN    0.0000              NaN
+                  Manual-RF-RF    NaN    NaN    0.0000              NaN
+                  Manual-NN-NN    NaN    NaN    0.0000              NaN
+                    Auto-Lasso 0.0046 0.1361    0.9440           0.5278
+                       Auto-RF 0.0080 0.1409    0.9260           0.5072
+                       Auto-NN 0.0038 0.1501    0.9560           0.5672
+
+========================================================================
+Estimand: E[Y(1,1)]
+Configuration: Linear DGP + truncated adversarial
+Propensity: truncated_adv
+Truncation: [0.3, 0.7]
+Result dir: results/linear/N2000/truncated_adv_0.3_0.7
+N = 2000  |  tmax = 500
+True parameter = -2.0000  |  Iterations: 500 / 500
+========================================================================
+                        Method   Bias   RMSE  Coverage  Interval Length
+                        Oracle 0.0066 0.0965    0.9580           0.3866
+Manual-Lasso (Bradic Original) 0.0071 0.1003    0.9700           0.3982
+         Manual-Lasso (Bradic)    NaN    NaN    0.0000              NaN
+            Manual-RF (Bradic)    NaN    NaN    0.0000              NaN
+            Manual-NN (Bradic)    NaN    NaN    0.0000              NaN
+                  Manual-Lasso    NaN    NaN    0.0000              NaN
+                     Manual-RF    NaN    NaN    0.0000              NaN
+                     Manual-NN    NaN    NaN    0.0000              NaN
+            Manual-Lasso-Lasso    NaN    NaN    0.0000              NaN
+                  Manual-RF-RF    NaN    NaN    0.0000              NaN
+                  Manual-NN-NN    NaN    NaN    0.0000              NaN
+                    Auto-Lasso 0.0045 0.0930    0.9600           0.3714
+                       Auto-RF 0.0054 0.0974    0.9480           0.3593
+                       Auto-NN 0.0077 0.1029    0.9720           0.4209
+
+[ATE | Linear DGP + truncated logistic | truncated_logistic | truncation [0.1, 0.9] | N=500] — no results found, skipping
+
+[ATE | Linear DGP + truncated logistic | truncated_logistic | truncation [0.1, 0.9] | N=1000] — no results found, skipping
+
+[ATE | Linear DGP + truncated logistic | truncated_logistic | truncation [0.1, 0.9] | N=2000] — no results found, skipping
+
+[ATE | Nonlinear DGP + truncated adversarial | truncated_adv | truncation [0.1, 0.9] | N=500] — no results found, skipping
+
+[ATE | Nonlinear DGP + truncated adversarial | truncated_adv | truncation [0.1, 0.9] | N=1000] — no results found, skipping
+
+[ATE | Nonlinear DGP + truncated adversarial | truncated_adv | truncation [0.1, 0.9] | N=2000] — no results found, skipping
+
+[ATE | Linear DGP + truncated adversarial | truncated_adv | truncation [0.1, 0.9] | N=500] — no results found, skipping
+
+[ATE | Linear DGP + truncated adversarial | truncated_adv | truncation [0.1, 0.9] | N=1000] — no results found, skipping
+
+[ATE | Linear DGP + truncated adversarial | truncated_adv | truncation [0.1, 0.9] | N=2000] — no results found, skipping
+
+[ATE | Linear DGP + logistic | logistic | truncation none (full support) | N=500] — no results found, skipping
+
+[ATE | Linear DGP + logistic | logistic | truncation none (full support) | N=1000] — no results found, skipping
+
+[ATE | Linear DGP + logistic | logistic | truncation none (full support) | N=2000] — no results found, skipping

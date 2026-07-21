@@ -1,0 +1,1 @@
+The Static_Manual_Auto-Lasso/RF/NN estimates are taken verbatim from Chernozhukov, et al., 2023 and hard-coded into the script. The Static_Manual_Linear estimator is the doubly-robust estimator of Sant'Anna and Zhou; the Dynamic_OLS estimator is a parametric estimator from Caetano, et al. 

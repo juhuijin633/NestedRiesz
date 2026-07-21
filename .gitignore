@@ -1,0 +1,13 @@
+.venv/
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+*.Rproj
+*.pyc
+__pycache__/
+*.err
+*.out
+logs/
+.csvrepo-clean.git/
